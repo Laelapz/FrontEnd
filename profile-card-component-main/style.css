@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+    max-height: 380px;
+    max-width: 350px;
+    color: hsl(229, 23%, 23%);
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 
+    "card      card  card"
+    "image     image image"
+    "name      name  name"
+    "city      city  city"
+    "followers likes photos"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    grid-area: card;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+}
+
+.image{
+    grid-area: image;
+    border-radius: 50%;
+    justify-self: center;
+    position: relative;
+    bottom: 30px;
+    border: 5px solid white;
+}
+
+.name{
+    grid-area: name;
+    justify-self: center;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
+
+.age{
+    font-size: 16px;
+    font-weight: 400;
+    color: darkgray;
+}
+
+.city{
+    grid-area: city;
+    justify-self: center;
+    font-weight: 400;
+    color: darkgray;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.followers{
+    grid-area: followers;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(169, 169, 169, 0.4);
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.likes{
+    grid-area: likes;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(169, 169, 169, 0.4);
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.photos{
+    grid-area: photos;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(169, 169, 169, 0.4);
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.status{
+    color: darkgray;
+    font-size: 10px;
+    font-weight: 400;
+}
